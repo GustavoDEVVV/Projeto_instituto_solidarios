@@ -1,0 +1,101 @@
+body{
+    background-color: #ffffff;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header img{
+    width: 15rem;
+}
+
+header a{
+    padding: 1rem;
+    padding-bottom: 0%;
+    font-family: "Bebas Neue", sans-serif;
+    color: red;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.7rem;
+}
+
+header a:hover{
+    color: #0094FF;
+}
+
+
+header a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0094FF;
+    transition: width 0.4s ease, left 0.3s ease;
+}
+
+header a:hover::after {
+    left: 0;
+    width: 95%;
+}
+
+/* pagina inicial */
+
+.pg-inicial{
+    width: 100%;
+    height: 30rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.texto{
+margin: 2rem;
+display: flex;
+align-items: center;
+}
+
+.pg-inicial h1{
+    font-size: 5rem;
+    color: #0094FF;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.pg-inicial span{
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+    color: red;
+}
+
+
+/* pagina de sobre */
+
+/* .pg-sobre{
+    width: 100%;
+} */
+
+.pg-sobre .texto-sobre{
+    display: flex;
+    word-wrap: break-word;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#titulo{
+    font-size: 4rem;
+    color: #0094FF;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#conteudo{
+    font-size: 2rem;
+    width: 90rem;
+    font-family: "Poppins", sans-serif;
+}
