@@ -1,5 +1,6 @@
 body {
-    background-color: #ffffff;
+    background-color: #d5dde7;
+    overflow-x: hidden;
 }
 
 :root {
@@ -69,10 +70,34 @@ header a:hover::after {
     font-family: "Bebas Neue", sans-serif;
 }
 
-.pg-inicial span {
+.pg-inicial .ultima-letra {
     font-family: "Poppins", sans-serif;
     font-size: 5rem;
+    color: transparent;
+    position: relative;
+}
+
+
+.ultima-letra::before {
+    position: absolute;
+    content: "InstitutoSolidarios";
     color: red;
+    animation: anime 10s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes anime {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 99%;
+    }
+
+    100% {
+        width: 0%;
+    }
 }
 
 ion-icon {
@@ -88,10 +113,6 @@ ion-icon:hover {
 }
 
 /* pagina de sobre */
-
-/* .pg-sobre{
-    width: 100%;
-} */
 
 .pg-sobre .texto-sobre {
     display: flex;
@@ -122,8 +143,41 @@ ion-icon:hover {
 }
 
 #menor {
+    animation: float1 7s ease-in-out infinite;
     width: 25rem;
     height: 8rem;
+}
+
+#maior {
+    animation: float2 4s ease-in-out infinite;
+}
+
+@keyframes float1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
@@ -246,9 +300,10 @@ ion-icon:hover {
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
+
 /* pagina dos cursos */
 
-.page-curso{
+.page-curso {
     margin-top: 5rem;
 }
 
@@ -277,17 +332,6 @@ ion-icon:hover {
     font-family: "Poppins", sans-serif;
 }
 
-.grade {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.grade p {
-    font-size: 2rem;
-    color: #0094FF;
-    font-family: "Bebas Neue", sans-serif;
-}
-
 .impacto {
     display: flex;
     justify-content: center;
@@ -295,13 +339,18 @@ ion-icon:hover {
 }
 
 .impacto .balao {
-    border:2px solid #0094FF;
+    border: 2px solid #0094FF;
     width: 30rem;
     height: 10rem;
     border-radius: 5rem 0rem 5rem 0rem;
+    transition: 1s;
 }
 
-.balao h1{
+.balao:hover {
+    scale: 1.1;
+}
+
+.balao h1 {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -312,6 +361,30 @@ ion-icon:hover {
     font-family: "Bebas Neue", sans-serif;
 }
 
-.balao h1 span{
+.balao h1 span {
     font-weight: 700;
+}
+
+.carrosel-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    animation: carrosel 30s linear infinite;
+}
+
+.name {
+    font-size: 2rem;
+    color: #0094FF;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+@keyframes carrosel {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
