@@ -82,7 +82,7 @@ header a:hover::after {
     position: absolute;
     content: "InstitutoSolidarios";
     color: red;
-    animation: anime 10s linear infinite;
+    animation: anime 5s linear infinite;
     overflow: hidden;
 }
 
@@ -92,11 +92,11 @@ header a:hover::after {
     }
 
     50% {
-        width: 99%;
+        width: 50%;
     }
 
     100% {
-        width: 0%;
+        width: 105%;
     }
 }
 
@@ -387,4 +387,100 @@ ion-icon:hover {
     100% {
         transform: translateX(-100%);
     }
+}
+
+/* Pagina de prestaçao de contas */
+
+.main-prestacao {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+}
+
+.main-prestacao .texto {
+    font-size: 6rem;
+    color: #0094FF;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.main-prestacao .texto span {
+    color: red;
+}
+
+
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    border-radius: 10px;
+}
+
+#img1 {
+    width: 50rem;
+    height: 36rem;
+}
+
+#img2 {
+    width: 50rem;
+    height: 36rem;
+}
+
+#img3 {
+    width: 50rem;
+    height: 36rem;
+}
+
+#img4 {
+    width: 50rem;
+    height: 36rem;
+}
+
+#img5 {
+    width: 50rem;
+    height: 36rem;
+}
+
+#img6 {
+    width: 50rem;
+    height: 36rem;
+}
+
+#img7 {
+    width: 50rem;
+    height: 36rem;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #0094FF;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
