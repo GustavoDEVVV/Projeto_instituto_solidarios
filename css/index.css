@@ -1,6 +1,12 @@
 body {
     background-color: #d5dde7;
     overflow-x: hidden;
+
+}
+
+section {
+    width: 100%;
+    height: 100%;
 }
 
 :root {
@@ -21,7 +27,7 @@ header a {
     padding: 1rem;
     padding-bottom: 0%;
     font-family: "Bebas Neue", sans-serif;
-    color: red;
+    color: #0094FF;
     text-decoration: none;
     position: relative;
     font-size: 1.9rem;
@@ -114,6 +120,11 @@ ion-icon:hover {
 
 /* pagina de sobre */
 
+.pg-sobre {
+    background-color: #0094FF;
+    border-radius: 1rem;
+}
+
 .pg-sobre .texto-sobre {
     display: flex;
     text-align: center;
@@ -122,12 +133,13 @@ ion-icon:hover {
 
 #titulo {
     font-size: 6rem;
-    color: #0094FF;
+    color: red;
     font-family: "Bebas Neue", sans-serif;
 }
 
 #conteudo {
     font-size: 1.3rem;
+    color: #d5dde7;
     width: 60rem;
     font-family: "Poppins", sans-serif;
 }
@@ -180,6 +192,35 @@ ion-icon:hover {
     }
 }
 
+.equipe-principaisAcoes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.equipe-principaisAcoes h1 {
+    display: block;
+}
+
+.AcoesPrincipais {
+    justify-content: center;
+    text-align: center;
+}
+
+summary {
+    font-size: 4rem;
+    color: #d5dde7;
+    font-weight: 200;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+details span {
+    font-size: 1.3rem;
+    color: #d5dde7;
+    font-family: "Poppins", sans-serif;
+}
 
 /* pagina de serviços */
 
@@ -305,18 +346,21 @@ ion-icon:hover {
 
 .page-curso {
     margin-top: 5rem;
+    background-color: #0094FF;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .texto-curso h1 {
     font-size: 4rem;
     margin-top: 0;
     margin-bottom: 0;
-    color: #0094FF;
+    color: #d5dde7;
     font-family: "Bebas Neue", sans-serif;
 }
 
 #titulo-grade {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 0;
     display: flex;
     justify-content: center;
@@ -328,6 +372,7 @@ ion-icon:hover {
 
 .texto-curso p {
     font-size: 1.3rem;
+    color: #d5dde7;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
@@ -339,7 +384,7 @@ ion-icon:hover {
 }
 
 .impacto .balao {
-    border: 2px solid #0094FF;
+    border: 2px solid #d5dde7;
     width: 30rem;
     height: 10rem;
     border-radius: 5rem 0rem 5rem 0rem;
@@ -357,7 +402,7 @@ ion-icon:hover {
     margin-top: 3rem;
     font-size: 1.9rem;
     font-weight: 100;
-    color: #0094FF;
+    color: #d5dde7;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -375,7 +420,7 @@ ion-icon:hover {
 
 .name {
     font-size: 2rem;
-    color: #0094FF;
+    color: #d5dde7;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -459,7 +504,7 @@ ion-icon:hover {
     height: 36rem;
 }
 
-button {
+#button-carrosel {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -472,7 +517,7 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+#button-carrosel:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: #0094FF;
 }
@@ -483,4 +528,96 @@ button:hover {
 
 .next {
     right: 10px;
+}
+
+/* Pagina de localização */
+
+.pg-localizacao {
+    background-color: #0094FF;
+    border-radius: 1rem;
+    margin-top: 10rem;
+    padding: 1rem;
+}
+
+.titulo-localiza h1 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: #d5dde7;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.titulo-localiza p {
+    font-size: 1.3rem;
+    display: flex;
+    color: #d5dde7;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+/* pagina formulario */
+
+.pg-forms {
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-form {
+    border: 2px solid #0094FF;
+    border-radius: 2rem;
+    justify-content: center;
+    width: 50rem;
+    height: 32rem;
+}
+
+.titulo-form {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #0094FF;
+    font-family: "Poppins", sans-serif;
+}
+
+label {
+    font-size: 1.3rem;
+    color: #0094FF;
+    font-family: "Poppins", sans-serif;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    padding: 1rem;
+    background-color: transparent;
+    border: #0094FF 2px solid;
+    border-radius: 1rem;
+    height: 0.3rem;
+    margin-bottom: 3rem;
+}
+
+#button-form {
+    top: 0;
+    position: relative;
+    background-color: #0094FF;
+    color: #d5dde7;
+    height: 4rem;
+    width: 10rem;
+    border: none;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+#button-form:hover {
+    background-color: red;
+    color: #d5dde7;
 }

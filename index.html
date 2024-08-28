@@ -25,8 +25,11 @@
 
         <nav>
             <a href="#">Sobre</a>
+            <a href="#">serviços</a>
             <a href="#">Cursos</a>
             <a href="#">Prestações de contas</a>
+            <a href="#">Localização</a>
+            <a href="#">Se torne um apoiador!</a>
         </nav>
     </header>
 
@@ -54,6 +57,18 @@
                 mulheres, principalmente mães solos a empreenderem e gerarem sua renda na busca de saírem da
                 invisibilidade social e conquistarem uma transformação social efetiva que garatam a tão sonhada
                 independência financeira.</h1>
+        </div>
+
+        <div class="equipe-principaisAcoes">
+            <div class="AcoesPrincipais">
+                <details>
+                    <summary>Principais Ações</summary>
+
+                    <span>o Natal Solidário na comunidade do Barro em Tapacurá, São Lourenço da Mata.</span><br>
+                    <span>Bazar solidario em São Lourenço da Mata</span><br>
+                    <span>Ação Solidária no abrigo CASA DA ESPERANÇA localizada no bairro do parque capibaribe.</span>
+                </details>
+            </div>
         </div>
 
         <div class="grafico">
@@ -131,7 +146,7 @@
                 <h1><span>90</span> Mulheres participantes <br> das formações</h1>
             </div>
             <div class="balao">
-                <h1><span>Parcerias</span> com SEBRAE e a ONG gerando falcoes</h1>
+                <h1><span> Em um ano</span> Já colocamos pessoas <br>no mercado de trabalho</h1>
             </div>
         </div>
 
@@ -153,8 +168,54 @@
                     <img id="img6" src="./imagens/PrestacoesDeContas/palestra-escola.jpg" alt="Imagem 6">
                     <img id="img7" src="./imagens/PrestacoesDeContas/sacolinhas-crianças.jpg" alt="Imagem 7">
                 </div>
-                <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
-                <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+                <button id="button-carrosel" class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+                <button id="button-carrosel" class="next" onclick="mudarSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pg-localizacao">
+        <div class="titulo-localiza">
+            <h1>Em qual área nos atuamos</h1>
+
+            <p>Atuamos em toda a área de São Lourenço da Mata</p>
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15804.226329070572!2d-35.04843657562262!3d-7.9930940458905635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab054a7d941903%3A0xf46329131b094dea!2zU8OjbyBMb3VyZW7Dp28gZGEgTWF0YSwgUEU!5e0!3m2!1spt-BR!2sbr!4v1724800262459!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="pg-forms">
+
+        <div class="card-form">
+            <div class="titulo-form">
+                <h1>Fale conosco!</h1>
+            </div>
+    
+            <div class="form">
+                <form action="" method="POST">
+                    <label>
+                        Seu Nome: <br>
+                        <input type="text" name="nome">
+                    </label><br>
+                    <label>
+                        Your email: <br>
+                        <input type="email" name="email">
+                    </label> <br>
+    
+                    <label for="options">Escolha uma opção: <br></label>
+                    <select id="options" name="options">
+                        <option value="option1">Quero ser um voluntario</option>
+                        <option value="option2">Quero ser um patrocinador</option>
+                    </select>
+                    <br>
+                    <br>
+                    <button id="button-form" type="submit">enviar</button>
+                </form>
             </div>
         </div>
     </section>
