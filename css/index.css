@@ -4,10 +4,6 @@ body {
 
 }
 
-section {
-    width: 100%;
-    height: 100%;
-}
 
 :root {
     font-size: 62.5%;
@@ -27,14 +23,14 @@ header a {
     padding: 1rem;
     padding-bottom: 0%;
     font-family: "Bebas Neue", sans-serif;
-    color: #0094FF;
+    color: #003F86;
     text-decoration: none;
     position: relative;
     font-size: 1.9rem;
 }
 
 header a:hover {
-    color: #0094FF;
+    color: #003F86;
 }
 
 
@@ -45,7 +41,7 @@ header a::after {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #0094FF;
+    background-color: #003F86;
     transition: width 0.4s ease, left 0.3s ease;
 }
 
@@ -57,7 +53,8 @@ header a:hover::after {
 /* pagina inicial */
 
 .pg-inicial {
-    width: 100%;
+    width: 100vw;
+    height: 90vh;
     margin-top: 10rem;
     margin-bottom: 10rem;
     text-align: center;
@@ -71,7 +68,7 @@ header a:hover::after {
 
 .pg-inicial h1 {
     font-size: 7rem;
-    color: #0094FF;
+    color: #003F86;
     margin-bottom: 0;
     font-family: "Bebas Neue", sans-serif;
 }
@@ -87,7 +84,7 @@ header a:hover::after {
 .ultima-letra::before {
     position: absolute;
     content: "InstitutoSolidarios";
-    color: red;
+    color: #EA2127;
     animation: anime 5s linear infinite;
     overflow: hidden;
 }
@@ -111,19 +108,26 @@ ion-icon {
     padding: 0.5rem;
     transition: 0.5s;
     position: relative;
-    color: #0094FF;
+    color: #003F86;
 }
 
 ion-icon:hover {
-    color: red;
+    color: #EA2127;
 }
 
 /* pagina de sobre */
 
 .pg-sobre {
-    background-color: #0094FF;
     border-radius: 1rem;
+    transition: 0.5s linear;
+    margin-bottom: 10rem;
 }
+
+/* .pg-sobre:hover{
+    background-color: #0094FF;
+    color: #d5dde7;
+} */
+
 
 .pg-sobre .texto-sobre {
     display: flex;
@@ -133,14 +137,14 @@ ion-icon:hover {
 
 #titulo {
     font-size: 6rem;
-    color: red;
+    color: #EA2127;
     font-family: "Bebas Neue", sans-serif;
 }
 
 #conteudo {
     font-size: 1.3rem;
-    color: #d5dde7;
     width: 60rem;
+    color: #003F86;
     font-family: "Poppins", sans-serif;
 }
 
@@ -150,7 +154,7 @@ ion-icon:hover {
 }
 
 .grafico img {
-    background-color: #0094FF;
+    background-color: #003F86;
     border-radius: 2rem;
 }
 
@@ -211,24 +215,28 @@ ion-icon:hover {
 
 summary {
     font-size: 4rem;
-    color: #d5dde7;
+    color: #003F86;
     font-weight: 200;
     font-family: "Bebas Neue", sans-serif;
 }
 
 details span {
     font-size: 1.3rem;
-    color: #d5dde7;
+    color: #003F86;
     font-family: "Poppins", sans-serif;
 }
 
 /* pagina de serviços */
 
+.page-servicos{
+    margin-bottom: 10rem;
+}
+
 .titulo {
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    color: #0094FF;
+    color: #003F86;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -244,7 +252,7 @@ details span {
     justify-content: center;
     text-align: center;
     width: 20rem;
-    border: 4px solid #0094FF;
+    border: 4px solid #003F86;
     height: 30rem;
     transition: 1s;
     border-radius: 2rem;
@@ -263,7 +271,7 @@ details span {
 .card1 h1 {
     font-size: 2rem;
     font-weight: 200;
-    color: #0094FF;
+    color: #003F86;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -278,7 +286,7 @@ details span {
     justify-content: center;
     text-align: center;
     width: 20rem;
-    border: 4px solid #0094FF;
+    border: 4px solid #003F86;
     height: 30rem;
     transition: 1s;
     border-radius: 2rem;
@@ -297,7 +305,7 @@ details span {
 .card2 h1 {
     font-size: 2rem;
     font-weight: 200;
-    color: #0094FF;
+    color: #003F86;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -313,7 +321,7 @@ details span {
     transform: rotate(10deg);
     text-align: center;
     width: 20rem;
-    border: 4px solid #0094FF;
+    border: 4px solid #003F86;
     height: 30rem;
     transition: 0.5s;
     border-radius: 2rem;
@@ -332,7 +340,7 @@ details span {
 .card3 h1 {
     font-size: 2rem;
     font-weight: 200;
-    color: #0094FF;
+    color: #003F86;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -345,17 +353,18 @@ details span {
 /* pagina dos cursos */
 
 .page-curso {
-    margin-top: 5rem;
-    background-color: #0094FF;
+    margin-bottom: 10rem;
+    height: 80vh;
     border-radius: 1rem;
     padding: 1rem;
 }
 
+
 .texto-curso h1 {
     font-size: 4rem;
+    color: #003F86;
     margin-top: 0;
     margin-bottom: 0;
-    color: #d5dde7;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -365,15 +374,15 @@ details span {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
-    color: red;
+    color: #EA2127;
     font-weight: 400;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .texto-curso p {
     font-size: 1.3rem;
-    color: #d5dde7;
     font-weight: 600;
+    color: #003F86;
     font-family: "Poppins", sans-serif;
 }
 
@@ -384,7 +393,7 @@ details span {
 }
 
 .impacto .balao {
-    border: 2px solid #d5dde7;
+    border: 2px solid #003F86;
     width: 30rem;
     height: 10rem;
     border-radius: 5rem 0rem 5rem 0rem;
@@ -402,12 +411,13 @@ details span {
     margin-top: 3rem;
     font-size: 1.9rem;
     font-weight: 100;
-    color: #d5dde7;
+    color: #003F86;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .balao h1 span {
     font-weight: 700;
+    color: #EA2127;
 }
 
 .carrosel-content {
@@ -420,7 +430,7 @@ details span {
 
 .name {
     font-size: 2rem;
-    color: #d5dde7;
+    color: #003F86;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -436,20 +446,23 @@ details span {
 
 /* Pagina de prestaçao de contas */
 
+.page-prestacao{
+    margin-bottom: 10rem;
+}
+
 .main-prestacao {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10rem;
 }
 
 .main-prestacao .texto {
     font-size: 6rem;
-    color: #0094FF;
+    color: #003F86;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .main-prestacao .texto span {
-    color: red;
+    color: #EA2127;
 }
 
 
@@ -509,7 +522,7 @@ details span {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: red;
+    color: #EA2127;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -519,7 +532,7 @@ details span {
 
 #button-carrosel:hover {
     background-color: rgba(0, 0, 0, 0.8);
-    color: #0094FF;
+    color: #003F86;
 }
 
 .prev {
@@ -533,24 +546,23 @@ details span {
 /* Pagina de localização */
 
 .pg-localizacao {
-    background-color: #0094FF;
     border-radius: 1rem;
-    margin-top: 10rem;
+    margin-bottom: 10rem;
     padding: 1rem;
 }
 
 .titulo-localiza h1 {
     font-size: 3rem;
+    color: #003F86;
     display: flex;
     justify-content: center;
-    color: #d5dde7;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .titulo-localiza p {
     font-size: 1.3rem;
+    color: #003F86;
     display: flex;
-    color: #d5dde7;
     justify-content: center;
     font-family: "Poppins", sans-serif;
 }
@@ -570,7 +582,7 @@ details span {
 }
 
 .card-form {
-    border: 2px solid #0094FF;
+    border: 2px solid #003F86;
     border-radius: 2rem;
     justify-content: center;
     width: 50rem;
@@ -581,13 +593,13 @@ details span {
     display: flex;
     justify-content: center;
     font-size: 1.3rem;
-    color: #0094FF;
+    color: #003F86;
     font-family: "Poppins", sans-serif;
 }
 
 label {
     font-size: 1.3rem;
-    color: #0094FF;
+    color: #003F86;
     font-family: "Poppins", sans-serif;
 }
 
@@ -599,7 +611,7 @@ label {
 form input {
     padding: 1rem;
     background-color: transparent;
-    border: #0094FF 2px solid;
+    border: #003F86 2px solid;
     border-radius: 1rem;
     height: 0.3rem;
     margin-bottom: 3rem;
@@ -608,7 +620,7 @@ form input {
 #button-form {
     top: 0;
     position: relative;
-    background-color: #0094FF;
+    background-color: #003F86;
     color: #d5dde7;
     height: 4rem;
     width: 10rem;
@@ -618,6 +630,6 @@ form input {
 }
 
 #button-form:hover {
-    background-color: red;
+    background-color: #EA2127;
     color: #d5dde7;
 }
