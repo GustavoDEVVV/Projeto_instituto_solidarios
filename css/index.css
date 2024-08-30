@@ -29,27 +29,6 @@ header a {
     font-size: 1.9rem;
 }
 
-header a:hover {
-    color: #003F86;
-}
-
-
-header a::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #003F86;
-    transition: width 0.4s ease, left 0.3s ease;
-}
-
-header a:hover::after {
-    left: 0;
-    width: 95%;
-}
-
 /* pagina inicial */
 
 .pg-inicial {
@@ -80,29 +59,6 @@ header a:hover::after {
     position: relative;
 }
 
-
-.ultima-letra::before {
-    position: absolute;
-    content: "InstitutoSolidarios";
-    color: #EA2127;
-    animation: anime 5s linear infinite;
-    overflow: hidden;
-}
-
-@keyframes anime {
-    0% {
-        width: 0%;
-    }
-
-    50% {
-        width: 50%;
-    }
-
-    100% {
-        width: 105%;
-    }
-}
-
 ion-icon {
     font-size: 3rem;
     padding: 0.5rem;
@@ -111,9 +67,6 @@ ion-icon {
     color: #003F86;
 }
 
-ion-icon:hover {
-    color: #EA2127;
-}
 
 /* pagina de sobre */
 
@@ -122,12 +75,6 @@ ion-icon:hover {
     transition: 0.5s linear;
     margin-bottom: 10rem;
 }
-
-/* .pg-sobre:hover{
-    background-color: #0094FF;
-    color: #d5dde7;
-} */
-
 
 .pg-sobre .texto-sobre {
     display: flex;
@@ -166,34 +113,6 @@ ion-icon:hover {
 
 #maior {
     animation: float2 4s ease-in-out infinite;
-}
-
-@keyframes float1 {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes float2 {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
 }
 
 .equipe-principaisAcoes {
@@ -258,10 +177,6 @@ details span {
     border-radius: 2rem;
 }
 
-.card1:hover {
-    transform: rotate(5deg);
-    background-color: #0095ff46;
-}
 
 .card1 img {
     width: 5rem;
@@ -290,11 +205,6 @@ details span {
     height: 30rem;
     transition: 1s;
     border-radius: 2rem;
-}
-
-.card2:hover {
-    transform: rotate(10deg);
-    background-color: #0095ff46;
 }
 
 .card2 img {
@@ -327,10 +237,6 @@ details span {
     border-radius: 2rem;
 }
 
-.card3:hover {
-    transform: rotate(-5deg);
-    background-color: #0095ff46;
-}
 
 .card3 img {
     width: 5rem;
@@ -400,10 +306,6 @@ details span {
     transition: 1s;
 }
 
-.balao:hover {
-    scale: 1.1;
-}
-
 .balao h1 {
     text-align: center;
     justify-content: center;
@@ -432,16 +334,6 @@ details span {
     font-size: 2rem;
     color: #003F86;
     font-family: "Bebas Neue", sans-serif;
-}
-
-@keyframes carrosel {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
 }
 
 /* Pagina de prestaçao de contas */
@@ -528,11 +420,6 @@ details span {
     cursor: pointer;
     font-size: 18px;
     border-radius: 5px;
-}
-
-#button-carrosel:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #003F86;
 }
 
 .prev {
@@ -629,7 +516,118 @@ form input {
     transition: 1s;
 }
 
+/* Seção de hovers */
+
+header a:hover {
+    color: #003F86;
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;     /* header */
+    width: 0;
+    height: 2px;
+    background-color: #003F86;
+    transition: width 0.4s ease, left 0.3s ease;
+}
+
+header a:hover::after {
+    left: 0;
+    width: 95%;
+}
+
+.ultima-letra::before {
+    position: absolute;   /* Pagina inicial */
+    content: "InstitutoSolidarios";
+    color: #EA2127;
+    animation: anime 5s linear infinite;
+    overflow: hidden;
+}
+
+ion-icon:hover {
+    color: #EA2127;
+}
+
+.card1:hover {
+    transform: rotate(5deg);    /* pagina de serviços */
+    background-color: #0095ff46;
+}
+.card2:hover {
+    transform: rotate(10deg);
+    background-color: #0095ff46;
+}
+.card3:hover {
+    transform: rotate(-5deg);
+    background-color: #0095ff46;
+}
+
+.balao:hover {
+    scale: 1.1;    /* pagina de cursos */
+}
+
+#button-carrosel:hover {
+    background-color: rgba(0, 0, 0, 0.8);       /* pagina de prestação de contas */
+    color: #003F86;
+}
+
 #button-form:hover {
-    background-color: #EA2127;
+    background-color: #EA2127;      /* pagina de formulario */
     color: #d5dde7;
+}
+
+
+/* Seção de KeyFrames */
+
+@keyframes anime {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 50%;     /* pagina inicial */
+    }
+
+    100% {
+        width: 105%;
+    }
+}
+
+@keyframes float1 {     /* pagina sobre */
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes carrosel {       /* pagina curso */
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
