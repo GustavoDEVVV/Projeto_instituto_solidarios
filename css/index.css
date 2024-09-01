@@ -1,5 +1,6 @@
 body {
     background-color: #d5dde7;
+    margin: 0;
     overflow-x: hidden;
 
 }
@@ -12,7 +13,11 @@ body {
 header {
     display: flex;
     justify-content: space-evenly;
+    height: 7rem;
+    border-radius: 0 0 3rem 3rem;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
     align-items: center;
+    background-color: aliceblue;
 }
 
 header img {
@@ -35,7 +40,7 @@ header a {
     width: 100vw;
     height: 90vh;
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -84,7 +89,7 @@ ion-icon {
 
 #titulo {
     font-size: 6rem;
-    color: #EA2127;
+    color: #003F86;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -168,6 +173,9 @@ details span {
 .card1 {
     align-items: center;
     transform: rotate(-10deg);
+    background-image: url('../imagens/servicos/certificado-curso.jpg');
+    background-size: cover;
+    background-position: center;
     justify-content: center;
     text-align: center;
     width: 20rem;
@@ -178,20 +186,16 @@ details span {
 }
 
 
-.card1 img {
-    width: 5rem;
-    margin-top: 5rem;
-}
-
 .card1 h1 {
     font-size: 2rem;
     font-weight: 200;
-    color: #003F86;
+    color: #d5dde7;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .card1 span {
     font-size: 1.3rem;
+    color: #d5dde7;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
@@ -199,6 +203,9 @@ details span {
 .card2 {
     align-items: center;
     justify-content: center;
+    background-image: url('../imagens/servicos/apresentacao-escola.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
     width: 20rem;
     border: 4px solid #003F86;
@@ -207,20 +214,16 @@ details span {
     border-radius: 2rem;
 }
 
-.card2 img {
-    width: 5rem;
-    margin-top: 5rem;
-}
-
 .card2 h1 {
     font-size: 2rem;
     font-weight: 200;
-    color: #003F86;
+    color: #d5dde7;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .card2 span {
     font-size: 1.3rem;
+    color: #d5dde7;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
@@ -228,6 +231,9 @@ details span {
 .card3 {
     align-items: center;
     justify-content: center;
+    background-image: url('../imagens/servicos/voluntario.jpg');
+    background-size: cover;
+    background-position: center;
     transform: rotate(10deg);
     text-align: center;
     width: 20rem;
@@ -237,22 +243,17 @@ details span {
     border-radius: 2rem;
 }
 
-
-.card3 img {
-    width: 5rem;
-    margin-top: 5rem;
-}
-
 .card3 h1 {
     font-size: 2rem;
     font-weight: 200;
-    color: #003F86;
+    color: #d5dde7;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .card3 span {
     font-size: 1.3rem;
     font-weight: 600;
+    color: #d5dde7;
     font-family: "Poppins", sans-serif;
 }
 
@@ -302,6 +303,7 @@ details span {
     border: 2px solid #003F86;
     width: 30rem;
     height: 10rem;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
     border-radius: 5rem 0rem 5rem 0rem;
     transition: 1s;
 }
@@ -362,7 +364,7 @@ details span {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
 .slides {
@@ -434,20 +436,24 @@ details span {
 
 .pg-localizacao {
     border-radius: 1rem;
+    display: flex;
+    justify-content: space-evenly;
     margin-bottom: 10rem;
     padding: 1rem;
 }
 
 .titulo-localiza h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: #003F86;
+    margin-bottom: 0;
     display: flex;
     justify-content: center;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .titulo-localiza p {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
+    margin: 0;
     color: #003F86;
     display: flex;
     justify-content: center;
@@ -456,6 +462,8 @@ details span {
 
 .map {
     display: flex;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
     justify-content: center;
 }
 
