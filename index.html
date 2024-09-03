@@ -21,7 +21,9 @@
 
 <body>
     <header>
-        <img src="./imagens/header/logo.png" alt="">
+        <a href="">
+            <img src="./imagens/header/logo.png" alt="">
+        </a>
 
         <nav>
             <a href="#">Sobre</a>
@@ -29,17 +31,25 @@
             <a href="#">Cursos</a>
             <a href="#">Prestações de contas</a>
             <a href="#">Localização</a>
-            <a href="#">Seja um doador!</a>
+            <a href="#pg-forms">Seja um doador!</a>
         </nav>
     </header>
 
-    <section class="pg-inicial">
+    <section id="pg-inicial">
 
         <div class="texto">
             <h1>Seja Bem vindo a pagina oficial do <br> <span class="ultima-letra">Institutosolidarios</span></h1>
-            <ion-icon name="logo-instagram"></ion-icon>
-            <ion-icon name="logo-whatsapp"></ion-icon>
-            <ion-icon name="logo-linkedin"></ion-icon>
+
+            <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+
         </div>
     </section>
 
@@ -185,29 +195,31 @@
         </div>
     </section>
 
-    <section class="pg-forms">
+    <section id="pg-forms">
+
+        <div class="voluntario">
+            <h1>Deseeja se tornar um voluntario <span>?</span><br>Clique aqui <span>!</span></h1>
+
+            <a target="_blank" href="https://l.instagram.com/?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSfKmirnN0vVliKTFrGbFgGuQVf-pWJyhHMuKVeV6jtAXCoYkw%2Fviewform%3Fusp%3Dsend_form&e=AT1hupVqtDUogsGBXAlp1Nty0kRkfoqU9oUvwdimOsyNWIaXT_OHEjF7-MKiBn59kORnhWiThPrEGd1p3CsJFfXoOADf9TIe4hVCfA">
+                <img src="./imagens/forms/formulario-voluntario.PNG" alt="">
+            </a>
+        </div>
 
         <div class="card-form">
             <div class="titulo-form">
-                <h1>Fale conosco!</h1>
+                <h1>Seja um patrocinador!</h1>
             </div>
     
-            <div class="form">
-                <form action="" method="POST">
+            <div id="form">
+                <form>
                     <label>
                         Seu Nome: <br>
-                        <input type="text" name="nome">
+                        <input type="text" id="nome" name="nome">
                     </label><br>
                     <label>
-                        Your email: <br>
-                        <input type="email" name="email">
-                    </label> <br>
-    
-                    <label for="options">Escolha uma opção: <br></label>
-                    <select id="options" name="options">
-                        <option value="option1">Quero ser um voluntario</option>
-                        <option value="option2">Quero ser um patrocinador</option>
-                    </select>
+                        Assunto: <br>
+                        <input type="text" id="assunto" name="nome">
+                    </label>
                     <br>
                     <br>
                     <button id="button-form" type="submit">enviar</button>
@@ -216,6 +228,7 @@
         </div>
     </section>
 
+    <script src="./Js/Forms-whats.Js"></script>
     <script src="./Js/Scroll.js"></script>
     <script src="./Js/Carrrossel.js"></script>
 

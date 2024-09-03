@@ -10,9 +10,34 @@ body {
     font-size: 62.5%;
 }
 
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #d5dde7;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #003F86;
+    border-radius: 6px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EA2127;
+}
+
 header {
     display: flex;
     justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 99vw;
+    z-index: 1000;
     height: 7rem;
     border-radius: 0 0 3rem 3rem;
     box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
@@ -36,7 +61,7 @@ header a {
 
 /* pagina inicial */
 
-.pg-inicial {
+#pg-inicial {
     width: 100vw;
     height: 90vh;
     margin-top: 10rem;
@@ -50,14 +75,14 @@ header a {
     margin: 2rem;
 }
 
-.pg-inicial h1 {
+#pg-inicial h1 {
     font-size: 7rem;
     color: #003F86;
     margin-bottom: 0;
     font-family: "Bebas Neue", sans-serif;
 }
 
-.pg-inicial .ultima-letra {
+#pg-inicial .ultima-letra {
     font-family: "Poppins", sans-serif;
     font-size: 5rem;
     color: transparent;
@@ -152,7 +177,7 @@ details span {
 
 /* pagina de serviços */
 
-.page-servicos{
+.page-servicos {
     margin-bottom: 10rem;
 }
 
@@ -340,7 +365,7 @@ details span {
 
 /* Pagina de prestaçao de contas */
 
-.page-prestacao{
+.page-prestacao {
     margin-bottom: 10rem;
 }
 
@@ -469,18 +494,34 @@ details span {
 
 /* pagina formulario */
 
-.pg-forms {
+#pg-forms {
     margin-bottom: 3rem;
     margin-top: 5rem;
-    display: flex;
     justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pg-forms .voluntario{
+    font-family: "Poppins", sans-serif;
+    color: #003F86;
+    font-size: 2rem;
+}
+
+#pg-forms span{
+    color: #EA2127;
+}
+
+.voluntario img{
+    width: 30rem;
+    border-radius: 2rem;
+    border: 2px solid #003F86;
 }
 
 .card-form {
     border: 2px solid #003F86;
     border-radius: 2rem;
-    justify-content: center;
-    width: 50rem;
+    width: 30rem;
     height: 32rem;
 }
 
@@ -498,7 +539,7 @@ label {
     font-family: "Poppins", sans-serif;
 }
 
-.form {
+#form {
     display: flex;
     justify-content: center;
 }
@@ -534,7 +575,8 @@ header a::after {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 0;     /* header */
+    bottom: 0;
+    /* header */
     width: 0;
     height: 2px;
     background-color: #003F86;
@@ -547,7 +589,8 @@ header a:hover::after {
 }
 
 .ultima-letra::before {
-    position: absolute;   /* Pagina inicial */
+    position: absolute;
+    /* Pagina inicial */
     content: "InstitutoSolidarios";
     color: #EA2127;
     animation: anime 5s linear infinite;
@@ -559,29 +602,35 @@ ion-icon:hover {
 }
 
 .card1:hover {
-    transform: rotate(5deg);    /* pagina de serviços */
+    transform: rotate(5deg);
+    /* pagina de serviços */
     background-color: #0095ff46;
 }
+
 .card2:hover {
     transform: rotate(10deg);
     background-color: #0095ff46;
 }
+
 .card3:hover {
     transform: rotate(-5deg);
     background-color: #0095ff46;
 }
 
 .balao:hover {
-    scale: 1.1;    /* pagina de cursos */
+    scale: 1.1;
+    /* pagina de cursos */
 }
 
 #button-carrosel:hover {
-    background-color: rgba(0, 0, 0, 0.8);       /* pagina de prestação de contas */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* pagina de prestação de contas */
     color: #003F86;
 }
 
 #button-form:hover {
-    background-color: #EA2127;      /* pagina de formulario */
+    background-color: #EA2127;
+    /* pagina de formulario */
     color: #d5dde7;
 }
 
@@ -594,7 +643,8 @@ ion-icon:hover {
     }
 
     50% {
-        width: 50%;     /* pagina inicial */
+        width: 50%;
+        /* pagina inicial */
     }
 
     100% {
@@ -602,7 +652,9 @@ ion-icon:hover {
     }
 }
 
-@keyframes float1 {     /* pagina sobre */
+@keyframes float1 {
+
+    /* pagina sobre */
     0% {
         transform: translateY(0);
     }
@@ -630,7 +682,9 @@ ion-icon:hover {
     }
 }
 
-@keyframes carrosel {       /* pagina curso */
+@keyframes carrosel {
+
+    /* pagina curso */
     0% {
         transform: translateX(100%);
     }
