@@ -100,13 +100,13 @@ ion-icon {
 
 /* pagina de sobre */
 
-.pg-sobre {
+#pg-sobre {
     border-radius: 1rem;
     transition: 0.5s linear;
     margin-bottom: 10rem;
 }
 
-.pg-sobre .texto-sobre {
+#pg-sobre .texto-sobre {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
@@ -177,7 +177,7 @@ details span {
 
 /* pagina de serviços */
 
-.page-servicos {
+#page-servicos {
     margin-bottom: 10rem;
 }
 
@@ -284,7 +284,7 @@ details span {
 
 /* pagina dos cursos */
 
-.page-curso {
+#page-curso {
     margin-bottom: 10rem;
     height: 80vh;
     border-radius: 1rem;
@@ -365,7 +365,7 @@ details span {
 
 /* Pagina de prestaçao de contas */
 
-.page-prestacao {
+#page-prestacao {
     margin-bottom: 10rem;
 }
 
@@ -459,7 +459,7 @@ details span {
 
 /* Pagina de localização */
 
-.pg-localizacao {
+#pg-localizacao {
     border-radius: 1rem;
     display: flex;
     justify-content: space-evenly;

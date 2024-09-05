@@ -1,19 +1,11 @@
-document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Previne o envio padrão do formulário
+document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault(); // <- Previne que o formulario seja enviado antes de abrir o Whatsapp
 
-    // Pega os valores dos campos
-    var nome = document.getElementById('nome').value;
+    var nome = document.getElementById('nome').value;     // <- Pega os valores dos campos, com os determinados ids
     var assunto = document.getElementById('assunto').value;
+    var texto = "Olá, meu nome é " + nome + ".\n" + assunto; // <- Formata a mensagem para enviar via WhatsApp
+    var numeroWhatsApp = "5581988065890"; // <- Número de WhatsApp
+    var url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(texto);  // <- Gera a URL para o WhatsApp
 
-    // Formata a mensagem para enviar via WhatsApp
-    var texto = "Olá, meu nome é " + nome + ".\n" + assunto;
-
-    // Número de WhatsApp (adicione o DDI e DDD sem espaços ou símbolos)
-    var numeroWhatsApp = "5581988065890"; // Substitua com o número desejado
-
-    // Gera a URL para o WhatsApp
-    var url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(texto);
-
-    // Redireciona para o WhatsApp
-    window.open(url, '_blank');
+    window.open(url, '_blank'); // <- Redireciona para o WhatsApp
 });
