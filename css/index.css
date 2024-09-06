@@ -59,6 +59,39 @@ header a {
     font-size: 1.9rem;
 }
 
+#hamburguer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+  }
+  
+  .menu-icon .bar {
+    width: 20px;
+    height: 3px;
+    background-color: #003F86;
+    margin: 1px 0;
+  }
+  
+  ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  ul.nav-links li a {
+    text-decoration: none;
+    display: none;
+    color: white;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  
 /* pagina inicial */
 
 #pg-inicial {
@@ -69,6 +102,10 @@ header a {
     text-align: center;
     justify-content: center;
     display: flex;
+}
+
+#pg-inicial a{
+    text-decoration: none;
 }
 
 .texto {
@@ -475,6 +512,11 @@ details span {
     justify-content: center;
     font-family: "Bebas Neue", sans-serif;
 }
+
+.texto-oculto-map{
+    display: none;
+}
+
 
 .titulo-localiza p {
     font-size: 1.9rem;

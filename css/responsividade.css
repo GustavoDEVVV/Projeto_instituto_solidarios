@@ -1,0 +1,225 @@
+@media(min-width: 320px) and (max-width: 720px) {
+    header img {
+        width: 10rem;
+
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    ul.nav-links li a {
+        display: block;
+        font-family: "Bebas Neue", sans-serif;
+        color: #003F86;
+      }
+
+    ul.nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: aliceblue;
+        border: 2px solid #003F86;
+        border-radius: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        display: none;
+    }
+
+    ul.nav-links.active {
+        display: flex;
+        padding: 0;
+    }
+
+
+    header nav {
+        display: none;
+    }
+    
+    #pg-inicial{
+        height: 50vw;
+        margin-bottom: 10rem;
+    }
+
+    #pg-inicial h1 {
+        font-size: 3rem;
+    }
+
+    #pg-inicial .ultima-letra {
+
+        font-size: 2rem;
+    }
+
+    ion-icon {
+        font-size: 2rem;
+    }
+
+    #pg-sobre .texto-sobre {
+        display: grid;
+        text-align: center;
+    }
+
+    #conteudo {
+        width: 20rem;
+    }
+
+    summary{
+        font-size: 2rem;
+    }
+
+    #titulo {
+        font-size: 2rem;
+    }
+
+    #conteudo {
+        font-size: 1.3rem;
+    }
+
+    .grafico {
+        display: none;
+    }
+
+    .card1 {
+        width: 9rem;
+        height: 20rem;
+        transform: rotate(0deg);
+    }
+
+    .card2 {
+        width: 9rem;
+        height: 20rem;
+        transform: rotate(0deg);
+    }
+
+    .card3 {
+        width: 9rem;
+        height: 20rem;
+        transform: rotate(0deg);
+    }
+
+    .card1 h1 {
+        font-size: 1rem;
+    }
+
+    .card1 span {
+        font-size: 1rem;
+    }
+
+    .card2 h1 {
+        font-size: 1rem;
+    }
+
+    .card2 span {
+        font-size: 1rem;
+    }
+
+    .card3 h1 {
+        font-size: 1rem;
+    }
+
+    .card3 span {
+        font-size: 1rem;
+    }
+
+    .carrosel-content {
+        display: none;
+    }
+
+    .texto-oculto {
+        display: block;
+        display: flex;
+    }
+
+    .impacto .balao {
+        height: 15rem;
+        border-radius: 0;
+        padding: 1rem;
+    }
+
+    #titulo-grade{
+        display: none;
+    }
+
+    .balao h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-prestacao {
+        display: grid;
+        justify-content: center;
+    }
+
+    .main-prestacao .texto {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+
+    #img1 {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    #img2 {
+        width: 20rem;
+        height: 36rem;
+    }
+
+    #img3 {
+        width: 20rem;
+        height: 36rem;
+    }
+
+    #img4 {
+        width: 20rem;
+        height: 36rem;
+    }
+
+    #img5 {
+        width: 20rem;
+        height: 36rem;
+    }
+
+    #img6 {
+        width: 20rem;
+        height: 36rem;
+    }
+
+    #img7 {
+        width: 20rem;
+        height: 36rem;
+    }
+
+    .slides {
+        width: 20rem;
+        margin: auto;
+    }
+
+    .carrossel {
+        width: 20rem;
+        margin: auto;
+    }
+
+    .map {
+        display: none;
+    }
+
+    #pg-forms {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .voluntario img {
+        width: 20rem;
+
+    }
+
+    .card-form {
+        margin: auto;
+    }
+
+}
