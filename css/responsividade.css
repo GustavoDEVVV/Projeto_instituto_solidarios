@@ -133,7 +133,8 @@
     }
 
     #page-curso{
-        margin-bottom: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .impacto .balao {
