@@ -132,6 +132,10 @@
         display: flex;
     }
 
+    #page-curso{
+        margin-bottom: 5rem;
+    }
+
     .impacto .balao {
         height: 15rem;
         border-radius: 0;
